@@ -1,16 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
+let stringTemplate = `String Template usada para ${1 + 1}`;
+console.log(stringTemplate);
 
-
-
-<script>
 let aspasSimples = 'Estamos criando uma String com aspas simples';
 // String em resumo são textos que podem ser utilizados no JavaScript
 // E para utiliza-lo podemos usar aspas simples, duplas ou String template
@@ -34,7 +24,7 @@ console.log(mensagem);
 
 let primeiroNome = 'Raphael';
 let ultimoNome = 'Silva';
-let nomeCompleto = PrimeiroNome + ' ' + ultimoNome;
+let nomeCompleto = primeiroNome + ' ' + ultimoNome;
 // Usando o +
 
 let nomeCompletoTemplate = `${primeiroNome} ${ultimoNome}`;
@@ -50,18 +40,3 @@ console.log(variavelNova)
 
 
 
-</script>
-
-
-
-
-
-
-
-
-
-
-
-
-</body>
-</html>
