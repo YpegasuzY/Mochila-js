@@ -15,4 +15,28 @@ function changeImage() {
             img.setAttribute("src", "img/chuva.jpg");
 
             img.setAttribute("alt", "Cidade Futurista chovendo");
-        }};
+        };}
+
+
+
+        function changeType() {
+            const input = document.getElementsByTagName("input")[0]; //Indice 0, primeiro elemento da lista de Input, que são vários, varia de acordo com a ordem digidata no html.
+            const currentType = input.getAttribute('type');
+
+            switch (currentType) { //fazer a troca do type na seguinte ordem
+                case 'text': //caso seja tipo text executar a função
+                    input.setAttribute('type', 'number'); //alter
+                    break;
+                
+                case 'number':
+                    input.setAttribute('type', 'radio');
+                    break;
+
+                case 'radio':
+                    input.setAttribute('type', 'range');
+                    break;
+
+                default: //padrao do codigo (inicio do codigo, sempre volta para isso no fim)
+                    input.setAttribute('type', 'text');
+            };
+        }
