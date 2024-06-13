@@ -10,7 +10,7 @@ function tornarSquare() {
     meuElemento.classList.remove('circle') //remover a classe square
 }
 
-function alternarFormato(){
+function alternarFormato(){ // Togle trabalha em estadp real, ou seja ele observa o formato do elemento e faz a alternância de acordo com as atribuições que colocamos
     meuElemento.classList.toggle('circle')
     meuElemento.classList.toggle('square')
 }
